@@ -1,0 +1,114 @@
+
+@media all and (min-width:992px){
+    .g-toggle-icon, .g-toggle-crose {
+        display: none !important;
+    }
+    .g-menu-items,.g-primary-menu{
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+}
+@media all and (max-width:992px){
+    .g-toggle-icon{
+        display: block;
+    }
+    .g-menu-items{
+       display: none;
+       position: absolute;
+       width: 100%;  
+       /* top: 75px; */
+       top: 0;
+       background-color: #fff;
+       box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+       left: 0;
+       padding: 20px 0;
+       height: 100vh;
+       z-index: 999;
+    }
+    .g-menu-items .g-primary-menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .g-primary-menu li ul {
+        top: 35px;
+        background: transparent;
+        box-shadow: none;
+    }
+    .g-header-menu ul li ul li {
+        border-bottom: none;
+    }
+    .g-menu-items .g-primary-menu li{
+        padding: 10px  0;
+    }
+    .g-header-menu {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .g-header-menu .g-primary-menu li a {
+        margin: 0;
+    }
+    .g-toggle-crose {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    /* Dropdown Menu */
+    .g-primary-menu li ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    .g-primary-menu li ul{
+        transition: none !important;
+    }
+}   
+
+@media all and (max-width:768px){
+    .g-toggle-icon, .g-toggle-crose {
+        height: 47px;
+        width: 47px;
+        line-height: 47px;
+    }
+    .g-listing-btn {
+        padding: 12px 15px;
+    }
+    /* .g-menu-items {
+        top: 67px;
+    } */
+    /* footer Area */
+    .g-footer-menu-link {
+        margin-bottom: 20px;
+    }
+    .g-single-footer h3 {
+        margin-bottom: 14px;
+    }
+   
+}
+@media all and (max-width:576px){
+    .g-footer-bottom-link a {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .g-footer-area {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .g-single-footer {
+        margin-bottom: 30px;
+    }
+    .g-footer-bottom-content {
+        margin-top: 40px;
+    }
+    .g-copyright-text p {
+        font-size: 15px;
+    }
+    .g-copyright-text {
+        margin-top: 2rem;
+    }
+   
+}
